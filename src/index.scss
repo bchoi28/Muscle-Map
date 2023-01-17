@@ -1,6 +1,6 @@
-// #whole-page {
-//     height: 100%;
-// }
+#whole-page {
+    height: 500px;
+}
 
 .header {
     display: flex;
@@ -29,7 +29,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 200px;
+    height: 75%;
     width: 200px;
 }
 
@@ -41,8 +41,8 @@
 }
 
 .muscle-block {
-    // width: 20%;
-    // height: 20%;
+    width: 20%;
+    height: 20%;
     background-color: #f2f2f2;
     border: 1px solid black;
     // position: absolute;
@@ -52,30 +52,36 @@
     top: 0;
     left: 0;
     right: 0;
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
 }
 
 #neck {
     top: 40%;
     left: 0;
     right: 0;
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.chest {
+    display: flex;
+    flex-direction: space-between;
+    align-items: center;
 }
 
 #chest-left {
     top: 50%;
     left: 0;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
 }
 
 #chest-right {
     top: 50%;
     left: 40%;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
 }
 
 #shoulder-left {
@@ -134,8 +140,37 @@
     height: 30px;
 }
 
-.right-side {
+.container {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    height: 75%;
+}
+
+.left-side {
+    width: 50%;
+}
+
+.right-side {
+    width: 50%;
+    position: relative;
+}
+
+#exercise-info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 50%;
+    overflow: scroll;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+#gif-area {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 50%;
+    background-color: #f2f2f2;
+    padding: 10px;
 }
