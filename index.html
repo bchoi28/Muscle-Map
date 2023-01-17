@@ -5,12 +5,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- <link rel="stylesheet" href="./dist/main.css" /> -->
+    <link rel="stylesheet" href="./dist/main.css" />
     <script src="./dist/main.js"></script>
-    <title>Muscle Map</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <title>myFitnessGenerator</title>
 </head>
 
-<body>
+<body id="whole-page">
+
+    <header class="header">
+        <div class="title">myFitnessGenerator</div>
+        <div class="links">
+            <a class="icon" href="https://github.com/bchoi28" target="_blank">
+                <img src="./images/github.png" alt="My Github">
+            </a>
+            <a class="icon" href="https://linkedin.com/in/brandon-choi" target="_blank">
+                <img src="./images/linkedin.png" alt="My LinkedIn">
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="left-side">
+            <div class="human-body">
+                <div class="nonclickable" id="head"></div>
+                <div class="nonclickable" id="neck"></div>
+                <div class="muscle-block" id="chest-left"></div>
+                <!-- <div class="muscle-block" id="chest-right"></div> -->
+                <div class="muscle-block" id="shoulder-left"></div>
+                <!-- <div class="muscle-block" id="shoulder-right"></div> -->
+                <div class="muscle-block" id="abdominals-1"></div>
+                <!-- <div class="muscle-block" id="abdominals-2"></div>
+                        <div class="muscle-block" id="abdominals-3"></div>
+                        <div class="muscle-block" id="abdominals-4"></div>
+                        <div class="muscle-block" id="abdominals-5"></div>
+                        <div class="muscle-block" id="abdominals-6"></div> -->
+                <!-- <div class="muscle-block" id="hip"></div> -->
+            </div>
+        </div>
+
+        <div class="right-side">
+            <div id="exercise-info"></div>
+            <div id="gif-area"></div>
+        </div>
+    </div>
+
 </body>
 
 </html>
